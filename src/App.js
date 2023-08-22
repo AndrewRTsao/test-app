@@ -16,7 +16,6 @@ function App() {
       <AppComponent/>
     </Router>
   )
-
 }
 
 function AppComponent() {

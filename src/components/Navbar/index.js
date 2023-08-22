@@ -2,6 +2,16 @@ import React from "react";
 import { Nav, NavLink, NavMenu }
 	from "./NavbarElements";
 
+const handleOnClick = (e) => {
+
+	window.CommandBar.trackEvent('dogs-page-opened', {})
+
+	/* 
+	if(e.currentTarget == "dogs") {
+
+	} */
+}
+
 const Navbar = () => {
 	return (
 		<>
@@ -13,7 +23,7 @@ const Navbar = () => {
 					<NavLink to="/contact">
 						Contact Us
 					</NavLink>
-					<NavLink to="/dogs">
+					<NavLink to="/dogs" onClick={handleOnClick}>
 						Dogs
 					</NavLink>
 					<NavLink to="/sign-up">
