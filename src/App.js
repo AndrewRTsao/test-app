@@ -20,6 +20,7 @@ function App() {
 
 function AppComponent() {
   useCommandBar();
+
 	return (
     <div className="App">
       <Navbar />

@@ -6,10 +6,6 @@ const handleOnClick = (e) => {
 
 	window.CommandBar.trackEvent('dogs-page-opened', {})
 
-	/* 
-	if(e.currentTarget == "dogs") {
-
-	} */
 }
 
 const Navbar = () => {
