@@ -5,7 +5,7 @@ import { Nav, NavLink, NavMenu }
 const handleOnClick = (e) => {
 
 	window.CommandBar.trackEvent('dogs-page-opened', {})
-
+	
 }
 
 const Navbar = () => {

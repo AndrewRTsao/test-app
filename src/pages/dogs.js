@@ -15,11 +15,9 @@ const Dogs = () => {
 				`This is an HTTP error: The status is ${response.status}`
 			);
 			}
-			//console.log(response)
 			return response.json();
 		})
 		.then((actualData) => {
-			//console.log(actualData)
 			setData(actualData);
 			setError(null);
 		})
@@ -34,9 +32,7 @@ const Dogs = () => {
 
 	return (
 		<div>
-		<h1>Check this page for dogs looking for friends!</h1>
-
-		
+		<h1>Check this page for dogs looking for friends!</h1>	
 		<h2>Some breeds that we have available</h2>
 			{loading && <div>A moment please...</div>}
 			{error && (
